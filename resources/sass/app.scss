@@ -1,0 +1,43 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom Styles 
+.btn {
+    font-weight: 700;
+}
+
+@media(max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow:hidden;
+        background: #fff;
+    }
+    body:before {
+        position: fixed;
+        content: ' ';
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+        top:0;
+        left:0;
+        z-index: 99999;
+    }
+    body:after {
+        position: fixed;
+        content: "SmoothFlight is currently only available on desktop 🙂";
+        z-index: 100000;
+        top: 50vh;
+        left: 50%;
+        margin-left: -13em;
+        font-weight: 600;
+        text-align: center;
+    }
+}
